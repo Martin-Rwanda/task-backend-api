@@ -1,0 +1,9 @@
+PUT http://localhost:3000/users/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe"
+}
+// Permissions: UPDATE_USER

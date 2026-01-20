@@ -1,0 +1,12 @@
+POST  http://localhost:3000/tasks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "title": "Setup Database",
+  "description": "Initialize PostgreSQL",
+  "boardId": 1,
+  "priority": "HIGH",
+  "dueDate": "2026-02-01T12:00:00Z",
+  "assignedToId": 3
+}
+// Permissions: CREATE_TASK

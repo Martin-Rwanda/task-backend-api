@@ -1,0 +1,8 @@
+POST http://localhost:3000/users/:userId/roles
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "roleId": 1
+}
+
+// Permission: ASSIGN_ROLE

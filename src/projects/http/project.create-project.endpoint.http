@@ -1,0 +1,8 @@
+POST http://localhost:3000/projects
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "name": "Project Alpha",
+  "description": "This is project Alpha"
+}
+// Permissions: CREATE_PROJECT

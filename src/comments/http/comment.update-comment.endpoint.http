@@ -1,0 +1,8 @@
+PUT http://localhost:3000/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "message": "Updated comment text"
+}
+
+// Permissions: COMMENT_ON_TASK

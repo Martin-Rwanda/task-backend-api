@@ -1,0 +1,9 @@
+PUT http://localhost:3000/projects/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "name": "Project Beta",
+  "description": "Updated description"
+}
+
+// Permissions: UPDATE_PROJECT

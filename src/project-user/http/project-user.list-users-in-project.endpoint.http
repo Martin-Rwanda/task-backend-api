@@ -1,0 +1,4 @@
+GET http://localhost:3000/project-users/:projectId
+Authorization: Bearer {{token}}
+
+# Permissions: VIEW_PROJECT_USERS

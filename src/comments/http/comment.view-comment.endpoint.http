@@ -1,0 +1,4 @@
+GET http://localhost:3000/comments/task/:taskId
+Authorization: Bearer {{token}}
+
+# Permissions: VIEW_TASK

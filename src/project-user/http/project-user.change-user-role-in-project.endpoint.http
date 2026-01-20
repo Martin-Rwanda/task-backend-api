@@ -1,0 +1,10 @@
+PATCH http://localhost:3000/project-users
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "userId": 2,
+  "projectId": 1,
+  "roleId": 4
+}
+
+// Permissions: MANAGE_PROJECT_USERS

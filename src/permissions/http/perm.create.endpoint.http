@@ -1,0 +1,16 @@
+# POST http://localhost:3000/permissions
+# Authorization: Bearer {{accessToken}}
+# Content-Type: application/json
+
+# {
+#   "name": "task.create"
+# }
+
+POST http://localhost:3000/permissions
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "name": "user.create",
+  "description": "Ability to create users"
+}

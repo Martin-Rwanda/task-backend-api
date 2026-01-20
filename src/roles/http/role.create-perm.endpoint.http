@@ -1,0 +1,10 @@
+POST http://localhost:3000/roles
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "name": "MANAGER",
+  "description": "Manager role with limited permissions"
+}
+
+// Permissions: CREATE_ROLE

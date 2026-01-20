@@ -1,0 +1,4 @@
+DELETE http://localhost:3000/:userId/roles/:roleId
+Authorization: Bearer {{token}}
+
+# Permission: REMOVE_ROLE

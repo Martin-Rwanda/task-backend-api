@@ -1,0 +1,9 @@
+PUT http://localhost:3000/tasks/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "title": "Setup DB",
+  "status": "IN_PROGRESS",
+  "boardId": 2
+}
+Permissions: UPDATE_TASK

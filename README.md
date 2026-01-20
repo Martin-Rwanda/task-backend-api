@@ -96,3 +96,38 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+project role 
+examples:
+
+Role Name	Permissions
+PROJECT_ADMIN	   CREATE_TASK, DELETE_TASK
+DEVELOPER  	UPDATE_TASK, COMMENT_TASK
+
+
+| Entity                     | Permissions                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Users**                  | CREATE_USER, DELETE_USER, VIEW_USERS, ASSIGN_ROLE, REMOVE_ROLE, ASSIGN_PERMISSION, REMOVE_PERMISSION |
+| **Roles**                  | CREATE_ROLE, DELETE_ROLE, VIEW_ROLES                                                                 |
+| **Permissions**            | CREATE_PERMISSION, DELETE_PERMISSION, VIEW_PERMISSIONS                                               |
+| **Projects**               | CREATE_PROJECT, VIEW_PROJECT, UPDATE_PROJECT, DELETE_PROJECT, ASSIGN_PROJECT_ROLE?                    |
+| **Boards**                 | CREATE_BOARD, VIEW_BOARD, UPDATE_BOARD, DELETE_BOARD                                                 |
+| **Tasks**                  | CREATE_TASK, VIEW_TASK, UPDATE_TASK, DELETE_TASK, SET_TASK_DEADLINE, VIEW_OVERDUE_TASKS              |
+| **Task Assignments**       | ASSIGN_TASK, REMOVE_TASK_ASSIGNMENT, VIEW_TASK_ASSIGNMENTS                                           |
+| **Task Status / Workflow** | UPDATE_STATUS, COMPLETE_TASK                                                                         |
+| **Comments**               | COMMENT_ON_TASK, DELETE_COMMENT                                                                      |
+
+| Area            | Permissions                                                  |
+| --------------- | ------------------------------------------------------------ |
+| Users           | CREATE_USER, VIEW_USERS, DELETE_USER                         |
+| Roles           | CREATE_ROLE, VIEW_ROLES, DELETE_ROLE                         |
+| Permissions     | CREATE_PERMISSION, VIEW_PERMISSIONS                          |
+| Role-Permission | ASSIGN_PERMISSION, REMOVE_PERMISSION                         |
+| User-Role       | ASSIGN_ROLE, REMOVE_ROLE                                     |
+| Projects        | CREATE_PROJECT, VIEW_PROJECT, UPDATE_PROJECT, DELETE_PROJECT |
+| Project Users   | MANAGE_PROJECT_USERS, VIEW_PROJECT_USERS                     |
+| Boards          | CREATE_BOARD, VIEW_BOARD, UPDATE_BOARD, DELETE_BOARD         |
+| Tasks           | CREATE_TASK, VIEW_TASK, UPDATE_TASK, DELETE_TASK             |
+| Task Assignment | ASSIGN_TASK, REMOVE_TASK_ASSIGNMENT                          |
+| Comments        | COMMENT_ON_TASK, DELETE_COMMENT                              |
+| Audit           | (Read-only usually for admins)                               |

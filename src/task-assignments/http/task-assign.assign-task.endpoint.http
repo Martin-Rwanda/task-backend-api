@@ -1,0 +1,10 @@
+POST http://localhost:3000/task-assignments
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "taskId": 1,
+  "userId": 2,
+  "role": "ASSIGNEE"
+}
+
+// Permissions: ASSIGN_TASK

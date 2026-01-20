@@ -1,0 +1,4 @@
+DELETE http://localhost:3000/task-assignments/:id
+Authorization: Bearer {{token}}
+
+# Permissions: REMOVE_TASK_ASSIGNMENT

@@ -1,0 +1,9 @@
+POST http://localhost:3000/boards
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "name": "Frontend Board",
+  "projectId": 1
+}
+
+// Permissions: CREATE_BOARD

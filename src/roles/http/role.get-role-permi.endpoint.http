@@ -1,0 +1,4 @@
+GET http://localhost:3000/roles/:roleId/permissions
+Authorization: Bearer {{token}}
+
+Permission: VIEW_ROLES

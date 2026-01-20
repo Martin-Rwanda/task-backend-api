@@ -1,0 +1,4 @@
+DELETE http://localhost:3000/tasks/:id
+Authorization: Bearer {{token}}
+
+# Permissions: DELETE_TASK

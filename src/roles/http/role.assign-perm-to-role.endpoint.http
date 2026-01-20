@@ -1,0 +1,7 @@
+POST http://localhost:3000/roles/:roleId/permissions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "permissionId": 5
+}
+// Permissions: ASSIGN_PERMISSION

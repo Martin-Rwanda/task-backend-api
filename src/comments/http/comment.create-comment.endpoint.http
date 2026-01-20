@@ -1,0 +1,9 @@
+POST http://localhost:3000/comments
+Authorization: Bearer {{token}}
+Content-Type: application/json
+{
+  "message": "This needs to be fixed ASAP",
+  "taskId": 1
+}
+
+// Permissions: COMMENT_ON_TASK

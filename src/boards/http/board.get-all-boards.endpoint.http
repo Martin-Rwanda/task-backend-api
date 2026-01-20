@@ -1,0 +1,4 @@
+GET http://localhost:3000/boards
+Authorization: Bearer {{token}}
+
+# Permissions: VIEW_BOARD

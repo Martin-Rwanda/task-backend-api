@@ -1,0 +1,12 @@
+POST http://localhost:3000/users
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "firstName": "User",
+  "lastName": "Two",
+  "email": "user1@example.com",
+  "password": "Password123!",
+}
+
+// Permissions: CREATE_USER
