@@ -1,12 +1,10 @@
 POST http://localhost:3000/users
-Authorization: Bearer {{token}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJBRE1JTiJdLCJpYXQiOjE3Njg5ODA3NTgsImV4cCI6MTc2ODk4MTY1OH0.dOUaFCfCC81YbfgSLAmiPK9FGDKy6xzjPIyLniuL-bE
 Content-Type: application/json
 
 {
   "firstName": "User",
   "lastName": "Two",
   "email": "user1@example.com",
-  "password": "Password123!",
+  "password": "Password123!"
 }
-
-// Permissions: CREATE_USER

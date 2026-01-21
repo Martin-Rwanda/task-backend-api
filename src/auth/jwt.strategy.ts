@@ -20,7 +20,11 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   async validate(payload: any) {
     return this.userRepo.findOne({
       where: { id: payload.sub },
-      relations: ['roles', 'permissions', 'roles.permissions'],
+      relations: {
+        roles: {
+          permissions: true,
+        },
+      }
     });
   }
 }

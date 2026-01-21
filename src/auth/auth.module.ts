@@ -11,9 +11,12 @@ import { RolesModule } from 'src/roles/roles.module';
 import { PermissionsModule } from 'src/permissions/permissions.module';
 import { Role } from 'src/roles/roles.entuty';
 import { Permission } from 'src/permissions/permissions.entity';
+import { PassportModule } from '@nestjs/passport';
+import { JwtAuthGuard } from './guards/jwt-auth.guard';
 
 @Module({
   imports: [
+    PassportModule.register({ defaultStrategy: 'jwt' }),
     UsersModule, 
     RolesModule,
     PermissionsModule,
@@ -24,7 +27,7 @@ import { Permission } from 'src/permissions/permissions.entity';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, JwtStrategy, PermissionsGuard],
+  providers: [AuthService, JwtStrategy, PermissionsGuard, JwtAuthGuard],
   exports: [AuthService]
 })
 export class AuthModule {}

@@ -2,6 +2,9 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
-  "password": "User123!"
+  "email": "admin@example.com",
+  "password": "Admin123!"
 }
+> {%
+  client.global.set("token", response.body.access_token);
+%}
